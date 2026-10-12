@@ -878,3 +878,35 @@ h1, h2, p, .hero-title, .subtitle {
 .card, .item, .grid > div, article {
   margin-bottom: 1.5rem; display: flex; flex-direction: column;
 }
+
+
+/* === OmniSight Autonomous Fixes (93683b90) === */
+/* [OmniSight Fix] Low contrast on hero heading text 'Building Intelligent' (Severity: HIGH) */
+h1 span:first-child, .hero-title span:first-child {
+  color: #f1f5f9; /* or use a high-contrast gradient/light color consistent with the headline styling */
+}
+
+/* [OmniSight Fix] Navbar logo collides with 'ABOUT' navigation link (Severity: MEDIUM) */
+nav .logo, header .logo {
+  margin-right: 2rem; display: inline-flex; align-items: center;
+}
+
+/* [OmniSight Fix] Extremely low contrast on hero headline text 'Building Intelligent' (Severity: CRITICAL) */
+.hero-title span:first-child, .hero h1 span:first-child {
+  color: #ffffff;
+}
+
+/* [OmniSight Fix] Navigation logo and hamburger toggle button overlap in header (Severity: HIGH) */
+header nav, .navbar {
+  display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 1.5rem;
+}
+
+/* [OmniSight Fix] Severe contrast issue on hero title text (Severity: CRITICAL) */
+h1, .hero-title {
+  color: #f8fafc;
+}
+
+/* [OmniSight Fix] Mobile navigation toggle collides with site logo (Severity: HIGH) */
+header nav, .nav-container, .navbar {
+  display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 1.5rem;
+}
