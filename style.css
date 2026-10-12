@@ -794,3 +794,45 @@ section {
   .about-info { grid-template-columns: 1fr; }
   .stack-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+
+/* === OmniSight Autonomous Fixes (34e9a146) === */
+/* [OmniSight Fix] Insufficient contrast ratio on body text / headings (Severity: HIGH) */
+h1, h2, p, .hero-title, .subtitle {
+  color: #0f172a; text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* [OmniSight Fix] Uneven vertical grid alignment on samuelwinstonparker6-debug.github.io (Severity: LOW) */
+.card, .item, .grid > div, article {
+  margin-bottom: 1.5rem; display: flex; flex-direction: column;
+}
+
+/* [OmniSight Fix] Insufficient contrast ratio on body text / headings (Severity: HIGH) */
+h1, h2, p, .hero-title, .subtitle {
+  color: #0f172a; text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* [OmniSight Fix] Uneven vertical grid alignment on samuelwinstonparker6-debug.github.io (Severity: LOW) */
+.card, .item, .grid > div, article {
+  margin-bottom: 1.5rem; display: flex; flex-direction: column;
+}
+
+/* [OmniSight Fix] Mobile navigation toggle squished on samuelwinstonparker6-debug.github.io (Severity: HIGH) */
+header nav, .nav, .menu-toggle, nav {
+  display: flex; flex-direction: column; width: 100%; min-height: 48px;
+}
+
+/* [OmniSight Fix] Container overflows mobile viewport width (Severity: MEDIUM) */
+.container, main, section, body > div {
+  max-width: 100%; overflow-x: hidden; box-sizing: border-box;
+}
+
+/* [OmniSight Fix] Insufficient contrast ratio on body text / headings (Severity: HIGH) */
+h1, h2, p, .hero-title, .subtitle {
+  color: #0f172a; text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* [OmniSight Fix] Uneven vertical grid alignment on samuelwinstonparker6-debug.github.io (Severity: LOW) */
+.card, .item, .grid > div, article {
+  margin-bottom: 1.5rem; display: flex; flex-direction: column;
+}
