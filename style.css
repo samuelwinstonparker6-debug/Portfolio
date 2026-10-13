@@ -910,3 +910,15 @@ h1, .hero-title {
 header nav, .nav-container, .navbar {
   display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 1.5rem;
 }
+
+
+/* === OmniSight Autonomous Fixes (297b903f) === */
+/* [OmniSight Fix] Mobile navigation may lack sufficient tap targets on samuelwinstonparker6-debug.github.io (Severity: HIGH) */
+header nav {
+  display: flex; flex-direction: column; width: 100%; min-height: 48px;
+}
+
+/* [OmniSight Fix] Container may overflow mobile viewport (Severity: MEDIUM) */
+.container, main {
+  max-width: 100%; overflow-x: hidden; box-sizing: border-box;
+}
