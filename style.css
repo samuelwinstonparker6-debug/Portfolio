@@ -922,3 +922,15 @@ header nav {
 .container, main {
   max-width: 100%; overflow-x: hidden; box-sizing: border-box;
 }
+
+
+/* === OmniSight Autonomous Fixes (4061430b) === */
+/* [OmniSight Fix] Mobile navigation may lack sufficient tap targets on samuelwinstonparker6-debug.github.io (Severity: HIGH) */
+header nav {
+  display: flex; flex-direction: column; width: 100%; min-height: 48px;
+}
+
+/* [OmniSight Fix] Container may overflow mobile viewport (Severity: MEDIUM) */
+.container, main {
+  max-width: 100%; overflow-x: hidden; box-sizing: border-box;
+}
