@@ -934,3 +934,10 @@ header nav {
 .container, main {
   max-width: 100%; overflow-x: hidden; box-sizing: border-box;
 }
+
+
+/* === OmniSight Autonomous Fixes (490f65ef) === */
+/* [OmniSight Fix] Low contrast subtitle text in hero section (Severity: HIGH) */
+.hero-section p, .hero p {
+  color: #9ca3af; opacity: 1;
+}
