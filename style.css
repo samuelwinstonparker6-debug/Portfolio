@@ -941,3 +941,10 @@ header nav {
 .hero-section p, .hero p {
   color: #9ca3af; opacity: 1;
 }
+
+
+/* === OmniSight Autonomous Fixes (afcf6a13) === */
+/* [OmniSight Fix] Low contrast on hero description text (Severity: HIGH) */
+.hero-section p, .hero-description {
+  color: #cbd5e1;
+}
