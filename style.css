@@ -948,3 +948,15 @@ header nav {
 .hero-section p, .hero-description {
   color: #cbd5e1;
 }
+
+
+/* === OmniSight Autonomous Fixes (27993e7b) === */
+/* [OmniSight Fix] Hero Stats Counter Layout Collision (Severity: MEDIUM) */
+.hero-stats .stat-item {
+  display: flex; flex-direction: column; gap: 0.25rem;
+}
+
+/* [OmniSight Fix] Low contrast body text in hero section (Severity: HIGH) */
+.hero-section p, .hero-section .hero-description {
+  color: #cbd5e1; opacity: 1;
+}
