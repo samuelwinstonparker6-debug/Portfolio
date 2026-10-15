@@ -960,3 +960,30 @@ header nav {
 .hero-section p, .hero-section .hero-description {
   color: #cbd5e1; opacity: 1;
 }
+
+
+/* === OmniSight Autonomous Fixes (ff7d7ee4) === */
+/* [OmniSight Fix] Logo and menu toggle bunched together in header (Severity: HIGH) */
+.nav-container {
+  justify-content: space-between; width: 100%;
+}
+
+/* [OmniSight Fix] Inadequate text contrast on 'Open to Opportunities' badge (Severity: HIGH) */
+.status-badge {
+  color: #38bdf8;
+}
+
+/* [OmniSight Fix] Low contrast text on hero stat labels (Severity: MEDIUM) */
+.stat-label {
+  color: #94a3b8;
+}
+
+/* [OmniSight Fix] Mobile navigation may lack sufficient tap targets on samuelwinstonparker6-debug.github.io (Severity: HIGH) */
+header nav {
+  display: flex; flex-direction: column; width: 100%; min-height: 48px;
+}
+
+/* [OmniSight Fix] Container may overflow mobile viewport (Severity: MEDIUM) */
+.container, main {
+  max-width: 100%; overflow-x: hidden; box-sizing: border-box;
+}
