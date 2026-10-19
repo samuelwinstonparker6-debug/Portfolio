@@ -987,3 +987,10 @@ header nav {
 .container, main {
   max-width: 100%; overflow-x: hidden; box-sizing: border-box;
 }
+
+
+/* === OmniSight Autonomous Fixes (8da28aa4) === */
+/* [OmniSight Fix] Navbar logo and navigation links collide in center with no spacing (Severity: HIGH) */
+.navbar .container {
+  display: flex; justify-content: space-between; align-items: center;
+}
