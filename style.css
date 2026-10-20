@@ -1065,3 +1065,28 @@ section h3,
 .skill-item, .tech-tag, .badge, .project-card h3 {
   color: #ffffff !important;
 }
+
+
+/* === OmniSight Design Studio — 43102f71 === */
+/* Stabilize scroll rendering and prevent font subpixel distortion */
+.hero, .hero-content, .hero-title, .hero-description, .content-container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* Vivid, high-luminescence styles for highlighted keywords */
+.highlight-software, [class*='software'], span.accent:first-of-type {
+  color: #38bdf8 !important;
+  text-shadow: 0 0 14px rgba(56, 189, 248, 0.6) !important;
+  font-weight: 700 !important;
+}
+
+.highlight-together, [class*='together'], span.accent:last-of-type {
+  color: #fb7185 !important;
+  text-shadow: 0 0 14px rgba(251, 113, 133, 0.6) !important;
+  font-weight: 700 !important;
+}
