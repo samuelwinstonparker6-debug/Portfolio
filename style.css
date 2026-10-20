@@ -1090,3 +1090,47 @@ section h3,
   text-shadow: 0 0 14px rgba(251, 113, 133, 0.6) !important;
   font-weight: 700 !important;
 }
+
+
+/* === OmniSight Design Studio — 11caf610 === */
+/* Accessibility Contrast & Visibility Fixes */
+.hero-subtitle, .project-description, .contact-text {
+  color: #374151 !important;
+}
+a.nav-link {
+  color: #1d4ed8 !important;
+  font-weight: 600;
+}
+a.nav-link:hover {
+  color: #1e40af !important;
+  text-decoration: underline;
+}
+.btn-primary {
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border: 1px solid #1e40af !important;
+}
+.card, .project-card {
+  background-color: #ffffff !important;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #2563eb !important;
+  outline-offset: 2px !important;
+}
+
+/* === OmniSight Bug Fixes === */
+.hero-badge {
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.hero h1 .gradient-text {
+  background: linear-gradient(135deg, #38bdf8 0%, #f472b6 100%);
+  -webkit-background-clip: text;
+}
+
+.hero h1 {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
