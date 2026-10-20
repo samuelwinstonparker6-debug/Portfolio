@@ -1002,3 +1002,34 @@ main, .site-wrapper { overflow-x: clip; }
 section, .section { padding-top: clamp(4rem, 8vw, 7.5rem); padding-bottom: clamp(4rem, 8vw, 7.5rem); }
 .project-grid, .portfolio-grid, .cards-container { gap: clamp(2rem, 4vw, 3.5rem); row-gap: clamp(2.5rem, 5vw, 4rem); }
 .hero-section, .banner { min-height: 85vh; display: flex; align-items: center; padding-inline: clamp(1.5rem, 5vw, 5rem); }
+
+
+/* === OmniSight Design Studio — 52841166 === */
+/* Brighten section headers and hero tagline for readability */
+.hero-subtitle,
+.hero p.tagline,
+.hero .subtitle {
+  color: #f1f5f9 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.section-title,
+.section-heading,
+section h2,
+#tech-stack h2,
+#projects h2,
+#impact h2,
+#contact h2 {
+  color: #ffffff !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.section-subtitle,
+section h3,
+.sub-heading {
+  color: #bae6fd !important;
+  font-weight: 600;
+}
