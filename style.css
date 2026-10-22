@@ -1134,3 +1134,20 @@ a:focus-visible, button:focus-visible {
 .hero h1 {
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
+
+/* === OmniSight Autonomous Fixes (3f998056) === */
+/* [OmniSight Fix] Page content fails to render on desktop and tablet viewports (Severity: CRITICAL) */
+.portfolio-wrapper {
+  display: block; visibility: visible;
+}
+
+/* [OmniSight Fix] Low contrast on hero heading gradient text (Severity: HIGH) */
+.hero-section .gradient-text {
+  background: linear-gradient(135deg, #38bdf8, #c084fc); -webkit-background-clip: text;
+}
+
+/* [OmniSight Fix] Low contrast on 'Open to Opportunities' badge text (Severity: MEDIUM) */
+.hero-section .status-badge {
+  color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);
+}
