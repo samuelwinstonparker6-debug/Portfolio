@@ -1134,3 +1134,10 @@ a:focus-visible, button:focus-visible {
 .hero h1 {
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
+
+/* === OmniSight Autonomous Fixes (471a518e) === */
+/* [OmniSight Fix] Low text contrast on hero stat labels (Severity: MEDIUM) */
+.hero-stats .stat-label {
+  color: #94a3b8;
+}
